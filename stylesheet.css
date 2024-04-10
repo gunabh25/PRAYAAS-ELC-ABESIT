@@ -1,0 +1,578 @@
+.navbar {
+    background-color: palegoldenrod; /* Set your desired background color */
+    padding: 0; /* Add padding for better aesthetics */
+}
+
+.navbar-brand {
+    font-weight: bold; /* Make the brand text bold */
+}
+
+.navbar-brand img {
+    width: 30px; /* Set the width of the logo image */
+    height: 30px; /* Set the height of the logo image */
+    margin-right: 10px; /* Add some spacing between the logo and text */
+}
+
+.navbar-brand, .nav-link {
+    color: #495057; /* Set text color for brand and links */
+}
+
+.nav-link {
+    border-radius: 30px; /* Add border-radius for curved corners */
+    padding: 1px 0px; /* Add padding for better spacing */
+    margin: 0 5px; /* Add some margin between links */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    font-weight: bolder;
+}
+
+.nav-link:hover {
+    background-color: burlywood; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+.team-heading1{
+    font-family: 'DM Serif Display', serif;
+    font-size: 60px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 100%;
+    margin-bottom: 5px;
+    margin-top: 100px;
+}
+
+.heading1{
+    text-align: center;
+    font-weight: normal;
+    position: relative;
+    margin-top: 100px;
+}
+.heading1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: sienna;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+h1{
+    text-align: center;
+    font-weight: normal;
+    position: relative;
+    margin-top: 100px;
+}
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: sienna;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 200px;
+    }
+    50%{
+        width: 300px;
+    }
+    100%{
+        width: 200px;
+    }
+}
+
+.para{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing:border-box;
+    border: 1000px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background:#fff;
+    color: #333;
+    box-shadow: 0 10px 12px rgba(10, 10, 10, 0.1);
+    display: flex;
+    flex-direction:column;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    
+}
+
+img {
+    width: 1000%;
+    height: 1000%;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: top;
+    border-bottom: 2px solid #eee;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.btn {
+    /* margin-top: auto;
+    padding: 10px;
+    background-color: #000;
+    border-color: red;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s; */
+
+    border: 1px solid #000; /* Border color */
+    padding: 8px 16px; /* Padding */
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Ensure button appears as a block element */
+    margin-top: 10px; /* Add some space between cards */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f0f0f0; /* Button background color */
+    color: #000; /* Button text color */
+    box-shadow: 100px 100px 150px rgba(0, 0, 0, 0.2); /* Box shadow */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    
+}
+
+.btn:hover {
+    background-color: #ddd; /* Change background color on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.card-event {
+    width: 18rem;
+    height: 39rem;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card-event {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .card-event:hover {
+    transform: scale(1.05);
+    
+}
+  
+  .card-img-top {
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+  }
+  
+  .card-text {
+    text-align:center;
+    font-size:small;
+  }
+  
+  .btn-primary {
+    background-color: white;
+    border-color: red;
+    
+  }
+  
+  .btn-primary:hover {
+    background-color: gray;
+    border-color: red;
+  }
+
+ .sol1{
+    margin-top: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+
+ }
+ .sol2{
+    margin-top: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+ }
+ .sol3{
+    margin-top: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+
+ }
+ 
+ .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery-item {
+    flex: 1 1 200px; /* Adjust this value as needed */
+    margin: 5px;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-item {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-item {
+        flex-basis: calc(100% - 10px);
+    }
+}
+
+.social-links {
+    margin-top: 20px;
+}
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #007bff;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.h1{
+    text-align: center;
+    margin-top: 10px;
+    background-color:dodgerblue;
+    font-weight: bold;
+
+}
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 190px;
+  height: 100px; /* Set the height of the footer here */
+  line-height: 60px; /* Vertically center the text */
+  background-color: black; /* Light gray background color */
+  color: #000;
+}
+  
+  footer p {
+    margin: 0; /* Remove the margin from the paragraph */
+  }
+  
+  footer ul {
+    list-style: none; /* Remove the bullet points */
+    margin: 0; /* Remove the margin */
+    padding: 0; /* Remove the padding */
+  }
+  
+  footer li {
+    display: inline-block; /* Display the list items horizontally */
+    margin: 0 5px; /* Add some margin between the list items */
+  }
+  
+  footer a {
+    color: #333; /* Dark gray text color */
+    text-decoration: none; /* Remove the underline from the links */
+  }
+
+  #connect-with-us {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  #connect-with-us h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .social-media,
+  .newsletter,
+  .contact-info {
+    margin-bottom: 40px;
+  }
+  
+  .social-media h3,
+  .newsletter h3,
+  .contact-info h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-media ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-media ul li a:hover {
+    color: #007bff;
+  }
+
+  .contact-info p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .contact-info a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: #0056b3;
+  }
+  @media only screen and (max-width: 768px) {
+  .social-media ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+.about1{
+  margin-top: 100px;
+  margin-left: 15px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #495057;
+  text-align: center;
+}
+.about2{
+  margin-top: 5px;
+  margin-left: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  color: red;
+}
+.about3{
+  text-align: left;
+  margin-left: 16px;
+  font-size: 17px;
+}
+.about4{
+  margin-top: 5px;
+  margin-left: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  color: red;
+}
+.about5{
+  text-align: left;
+  margin-left: 16px;
+  font-size: 17px;
+}
+
+.a1{
+margin-left: 50px;
+margin-bottom: 8px;
+text-align: left;
+}
+.a2{
+margin-left: 50px;
+margin-bottom: 8px;
+text-align: left;
+}
+.a3{
+margin-left: 50px;
+margin-bottom: 8px;
+text-align: left;
+}
+.a4{
+margin-left: 50px;
+margin-bottom: 8px;
+text-align: left;
+}
+.a5{
+margin-left: 50px;
+margin-bottom: 8px;
+text-align: left;
+}
+.a6{
+margin-left: 50px;
+margin-bottom: 8px;
+text-align: left;
+}
+.a7{
+margin-left: 50px;
+margin-bottom: 8px;
+text-align: left;
+}
+.a8{
+margin-left: 50px;
+margin-bottom: 8px;
+text-align: left;
+}
+.a9{
+margin-left: 50px;
+margin-bottom: 8px;
+text-align: left;
+}
+.a10{
+margin-left: 50px;
+margin-bottom: 8px;
+text-align: left;
+}
+
+.welcome{
+  margin-top: 150px;
+  margin-left: 150px;
+  padding-top: 40px;
+  font-size: 100px;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+}
+
+.clubname{
+  margin-left: 150px;
+  font-size: 170px;
+}
+
+.E{
+  color:orangered;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+.L{
+  color: #0056b3;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+.C{
+  color: green;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.abesit{
+  color:black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.index-para{
+  font-size: 30px;
+  text-align: left;
+  margin-left:900px;
+  font-weight: bold;
+}
+
+.inspire{
+  font-weight: bold;
+  margin-left: 150px;
+  margin-top: 200px;
+  font-size: 35px;
+}
+
+.inspire-para{
+  margin-left: 200px;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.start{
+  margin-top: 170px;
+}
+
+.col{
+  margin-left: 150px;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
